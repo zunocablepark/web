@@ -1,0 +1,12 @@
+export { default as AdditionalInfo } from "./additional-info";
+export { default as ContactInfo } from "./contact-info";
+export { default as Footer } from "./footer";
+export { default as GalleryItem } from "./gallery-item";
+export { default as HeroHeadings } from "./hero-headings";
+export { default as HeroImage } from "./hero-image";
+export { default as HeroVideo } from "./hero-video";
+export { default as Logo } from "./logo";
+export { default as NavHeader } from "./nav-header";
+export { default as PartnerLogo } from "./partner-logo";
+export { default as PricesTable } from "./prices-table";
+export { default as WhatsappButton } from "./whatsapp-button";
