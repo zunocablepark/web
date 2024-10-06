@@ -22,6 +22,7 @@ const HeroHeadings = () => {
         className="m-8 p-3 sm:p-4 flex text-center items-center justify-center self-center text-xl md:text-2xl font-black bg-green-600 hover:bg-green-700 shadow-sm hover:shadow-md shadow-green-600 hover:shadow-slate-800 rounded-md"
         href={sessionLink}
         target="_blank"
+        rel="noopener noreferrer"
       >
         FAÇA SEU AGENDAMENTO
       </Link>

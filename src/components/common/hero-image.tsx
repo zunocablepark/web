@@ -13,20 +13,17 @@ const HeroImage = () => {
           <br />
         </h1>
       </div>
-      <div className="w-full h-full min-h-[400px] sm:min-h-[600px] md:min-h-[720px]">
+      <div className="relative w-full h-full min-h-[400px] sm:min-h-[600px] md:min-h-[720px]">
         <Image
           className="pl-0 md:pl-6 z-10 md:clip-path-rounded-left xl:rounded-b-3xl"
           src="/images/hero.jpeg"
-          alt="Wakeboarder jumping over an obstacle at Zuno Cable Park"
-          width={1920}
-          height={1080}
+          alt="Pedro Zucki pulando por cima de um obstáculo no Zuno Cable Park em Curitiba - PR."
+          fill
           sizes="100vh"
           style={{
             objectFit: "cover",
           }}
           priority={true}
-          placeholder="blur"
-          blurDataURL="/images/hero.jpeg"
         />
       </div>
     </div>

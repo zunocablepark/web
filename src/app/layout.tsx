@@ -1,26 +1,30 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import { cn } from "@/lib/utils";
 import { Footer, NavHeader, WhatsappButton } from "@/components";
+import { BASE_URL } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 import { fontSans } from "./fonts";
 
+const metadataBase = new URL(BASE_URL)
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zunocablepark.com.br"),
+  metadataBase: metadataBase,
   title: "Zuno Cable Park - Wakeboard & Wakeskate em Curitiba",
   description:
-    "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora!",
+    "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora! Perfeito para iniciantes e profissionais.",
   openGraph: {
     title: "Zuno Cable Park",
     description:
       "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora!",
-    url: "https://zunocablepark.com.br",
+    url: BASE_URL,
     siteName: "Zuno Cable Park",
     images: [
       {
-        url: "/images/hero.jpeg", // Local image path
-        // url: 'https://nextjs.org/og-alt.png',  // Must be an absolute URL
+        url: `${BASE_URL}/images/hero.jpeg`,
         width: 1280,
         height: 720,
         alt: "Zuno Cable Park",
@@ -33,13 +37,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zuno Cable Park - Wakeboard & Wakeskate em Curitiba",
     description:
-      "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora!",
-    images: ["/images/hero.jpeg"], // Local image path
-    // images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+      "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, a melhor experiência de wake perto de Curitiba.",
+    images: [`${BASE_URL}/images/hero.jpeg`],
   },
-  generator: "Next.js",
-  applicationName: "Zuno Cable Park",
-  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+  },
   keywords: [
     "Wakeboard",
     "Wakeskate",
@@ -47,17 +51,13 @@ export const metadata: Metadata = {
     "Esportes Aquáticos",
     "Zuno Cable Park",
   ],
-  authors: [
-    { name: "Diego Feder" },
-    { name: "Pedro Zucki", url: "https://zunocablepark.com.br" },
-  ],
+  generator: "Next.js",
+  applicationName: "Zuno Cable Park",
+  referrer: "origin-when-cross-origin",
+  authors: [{ name: "Diego Feder" }, { name: "Pedro Zucki", url: BASE_URL }],
   creator: "Pedro Zucki",
   publisher: "Zuno Cable Park",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+
 };
 
 export default function RootLayout({
@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -79,6 +79,8 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

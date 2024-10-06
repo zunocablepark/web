@@ -13,7 +13,7 @@ const HeroVideo = () => {
         muted
         playsInline
       >
-        <source className="" src="/videos/hero-720.mp4" type="video/mp4" />
+        <source src="/videos/hero-720.mp4" type="video/mp4" />
         {/* No fallback content */}
       </video>
     </AspectRatio>
