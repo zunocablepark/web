@@ -1,6 +1,8 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { cn } from "@/lib/utils";
 import { Footer, NavHeader, WhatsappButton } from "@/components";
@@ -77,6 +79,8 @@ export default function RootLayout({
         <NavHeader />
         <main className="flex flex-col items-center justify-between min-h-screen bg-black">
           {children}
+          <Analytics />
+          <SpeedInsights />
         </main>
         <Footer />
       </body>
