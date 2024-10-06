@@ -23,6 +23,7 @@ const PartnerLogo: React.FC<PartnerLogoProps> = ({ src, alt, link, width = 220, 
         width={width}
         height={height}
         className="h-auto"
+        loading="lazy"
       />
     </Link>
   );

@@ -18,6 +18,7 @@ const Footer = () => {
           className="w-fit flex flex-row items-center text-lg font-bold hover:underline"
           href="https://instagram.com/zunocablepark"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FaInstagram size={24} className="mr-2" />
           junte-se a nós no instagram

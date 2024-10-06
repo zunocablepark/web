@@ -9,6 +9,7 @@ const Logo = () => {
         src="/images/logo.png"
         width={120}
         height={60}
+        priority={true}
       />
     </Link>
   );

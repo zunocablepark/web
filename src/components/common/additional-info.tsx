@@ -10,7 +10,7 @@ import {
 const AdditionalInfo = () => {
   return (
     <div className="mt-4 xl:mt-12 text-pretty md:text-center w-full mx-auto">
-        <div className="mx-auto flex justify-center mb-6 xl:mb-8">
+        <div className="mx-auto flex justify-center mb-12">
           <MdOutlineFamilyRestroom className="inline-block w-14 h-14 bg-green-600 rounded-full p-2 mx-2 border-2" />
           <MdOutlinePets className="inline-block w-14 h-14 bg-green-600 rounded-full p-2 mx-2 border-2" />
           <IoBeerOutline className="inline-block w-14 h-14 bg-green-600 rounded-full p-2 mx-2 border-2" />
@@ -18,16 +18,13 @@ const AdditionalInfo = () => {
         </div>
         <div className="flex flex-col">
           <p className="text-wrap text-lg sm:text-xl mb-2">
-            Permitimos a entrada de animais de estimação, mas pedimos que cada
-            um cuide de seu bichinho com responsabilidade.
+            Permitimos a entrada de animais de estimação, mas pedimos que cada um cuide de seu bichinho com responsabilidade.
           </p>
           <p className="text-wrap text-lg sm:text-xl mb-2">
-            Oferecemos o consumo de água, cerveja, refrigerantes e isotônicos no
-            local.
+            Disponibilizamos para venda água, cerveja, refrigerantes e isotônicos no local.
           </p>
           <p className="text-wrap text-lg sm:text-xl">
-            Recomendamos que o consumo de bebidas alcoólicas seja feito apenas
-            após a sessão de wake.
+            Recomendamos que o consumo de bebidas alcoólicas seja feito apenas após a sessão de wake.
           </p>
         </div>
       </div>

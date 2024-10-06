@@ -13,21 +13,13 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-
       <HowItWorksSection />
-
       <GallerySection />
-
       <FaqSection />
-
       <VideoSection />
-
       <ContactSection />
-
       <MapSection />
-
       <PartnersSection />
-
     </>
   );
 }

@@ -17,6 +17,7 @@ const NavHeader = () => {
               className="font-extrabold whitespace-nowrap hover:underline hover:scale-105 transition-all duration-300"
               href={sessionLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               AGENDE SUA SESSÃO
             </Link>

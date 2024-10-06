@@ -14,6 +14,7 @@ const GalleryItem = ({ src, alt }: GalleryItemProps) => {
         width={500}
         height={500}
         className="object-cover w-full h-full"
+        loading="lazy"
       />
     </div>
   );

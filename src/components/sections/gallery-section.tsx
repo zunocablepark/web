@@ -5,18 +5,18 @@ import { GalleryItem } from "../";
 
 
 const images = [
-  { src: "/images/gallery/03-nose-press.jpeg", alt: "Gallery Image 3" },
-  { src: "/images/gallery/09-bia-wakeskate.jpg", alt: "Gallery Image 7" },
-  { src: "/images/gallery/04-top-view.jpg", alt: "Gallery Image 6" },
-  { src: "/images/gallery/05-pare-wake.jpg", alt: "Gallery Image 7" },
-  { src: "/images/gallery/12-glass-front-view.jpg", alt: "Gallery Image 7" },
-  { src: "/images/gallery/10-kid-fun.jpeg", alt: "Gallery Image 7" },
-  { src: "/images/gallery/06-galera.jpg", alt: "Gallery Image 5" },
-  { src: "/images/gallery/07-front-view.jpg", alt: "Gallery Image 7" },
-  { src: "/images/gallery/02-superman.jpg", alt: "Gallery Image 4" },
-  { src: "/images/gallery/11-crew.jpeg", alt: "Gallery Image 7" },
-  { src: "/images/gallery/00-top-view-woods.jpg", alt: "Gallery Image 1" },
-  { src: "/images/gallery/01-bia-control.jpg", alt: "Gallery Image 2" },
+  { src: "/images/gallery/03-nose-press.jpeg", alt: "Pedro Zucki realizando um nose press no wakeboard no Zuno Cable Park em Curitiba - Paraná, Brasil." },
+  { src: "/images/gallery/09-bia-wakeskate.jpg", alt: "Bia praticando wakeskate no Zuno Cable Park." },
+  { src: "/images/gallery/04-top-view.jpg", alt: "Vista aérea do lago e obstáculos no Zuno Cable Park." },
+  { src: "/images/gallery/05-pare-wake.jpg", alt: "Placa escrita WAKE e obstáculos ao fundo." },
+  { src: "/images/gallery/12-glass-front-view.jpg", alt: "Linda vista frontal do Zuno Cable Park com o reflexo do céu." },
+  { src: "/images/gallery/10-kid-fun.jpeg", alt: "Criança se divertindo no Zuno Cable Park em Curitiba, Paraná - Brasil." },
+  { src: "/images/gallery/06-galera.jpg", alt: "Grupo de amigos no Zuno Cable Park." },
+  { src: "/images/gallery/07-front-view.jpg", alt: "Vista frontal do Zuno Cable Park mostrando o BI-LEVEL." },
+  { src: "/images/gallery/02-superman.jpg", alt: "Praticante de wakeboard fazendo a manobra SUPERMAN!" },
+  { src: "/images/gallery/11-crew.jpeg", alt: "Equipe do Zuno Cable Park e amigos!" },
+  { src: "/images/gallery/00-top-view-woods.jpg", alt: "Vista aérea das áreas verdes do Zuno Cable Park." },
+  { src: "/images/gallery/01-bia-control.jpg", alt: "Bia e Pedro Zucki comandando o Zuno Cable Park!" },
 ];
 
 const GallerySection = () => {
