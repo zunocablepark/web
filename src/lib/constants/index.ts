@@ -1,4 +1,3 @@
-// 
 export const PHONE = "+5541997184675"
 export const PHONE_WPP = "41997184675"
 export const PHONE_LABEL = "(41) 99718-4675"

@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="w-full flex justify-center">
         <Link
           className="w-fit flex flex-row items-center text-lg font-bold hover:underline"
-          href="https://instagram.com/zunocablepark"
+          href="https://www.instagram.com/zunocablepark"
           target="_blank"
           rel="noopener noreferrer"
         >
