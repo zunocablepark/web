@@ -1,7 +1,12 @@
-export const PHONE = "+5541997184675"
-export const PHONE_WPP = "41997184675"
-export const PHONE_LABEL = "(41) 99718-4675"
+export const ADDRESS_LABEL = "ESTR. CATARINA TAVERNA DOS SANTOS, 1100 - CERNE, CAMPINA GRANDE DO SUL - PR, 83430-000"
+export const ADDRESS_LOCALITY = "Curitiba"
+export const ADDRESS_STREET = "Estr. Catarina Taverna dos Santos, 1100"
+export const BASE_URL = 'https://www.zunocablepark.com'
 export const EMAIL = "zunocontato@gmail.com"
 export const EMAIL_LABEL = "ZUNOCONTATO@GMAIL.COM"
-export const ADDRESS_LABEL = "ESTR. CATARINA TAVERNA DOS SANTOS, 1100 - CERNE, CAMPINA GRANDE DO SUL - PR, 83430-000"
-export const BASE_URL = 'https://www.zunocablepark.com'
+export const INSTAGRAM_URL = "https://www.instagram.com/zunocablepark"
+export const PHONE = "+5541997184675"
+export const PHONE_DASHED = "+55-41-99718-4675"
+export const PHONE_LABEL = "(41) 99718-4675"
+export const PHONE_WPP = "41997184675"
+export const POSTAL_CODE = "83430-000"
