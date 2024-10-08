@@ -1,6 +1,5 @@
 "use client";
 
-import { ContactInfo } from "@/components";
 import { useState, useEffect, useRef } from "react";
 
 const MapSection = () => {

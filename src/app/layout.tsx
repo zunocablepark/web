@@ -1,11 +1,12 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Footer, NavHeader, WhatsappButton } from "@/components";
-import { BASE_URL } from "@/lib/constants";
+import { ADDRESS_LOCALITY, ADDRESS_STREET, BASE_URL, INSTAGRAM_URL, PHONE_DASHED, POSTAL_CODE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { fontSans } from "./fonts";
 
@@ -13,7 +14,7 @@ const metadataBase = new URL(BASE_URL)
 
 export const metadata: Metadata = {
   metadataBase: metadataBase,
-  title: "Zuno Cable Park - Wakeboard & Wakeskate em Curitiba",
+  title: "Zuno Cable Park - Wakeboard e Wakeskate em Curitiba",
   description:
     "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora! Perfeito para iniciantes e profissionais.",
   openGraph: {
@@ -30,12 +31,19 @@ export const metadata: Metadata = {
         alt: "Zuno Cable Park",
       },
     ],
+    videos: [
+      {
+        url: `${BASE_URL}/videos/hero-720.mp4`,
+        width: 1280,
+        height: 720,
+      },
+    ],
     locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zuno Cable Park - Wakeboard & Wakeskate em Curitiba",
+    title: "Zuno Cable Park - Wakeboard e Wakeskate em Curitiba",
     description:
       "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, a melhor experiência de wake perto de Curitiba.",
     images: [`${BASE_URL}/images/hero.jpeg`],
@@ -46,15 +54,24 @@ export const metadata: Metadata = {
   },
   keywords: [
     "Wakeboard",
+    "Wakeboard Curitiba",
     "Wakeskate",
-    "Curitiba",
-    "Esportes Aquáticos",
+    "Wakeskate Curitiba",
     "Zuno Cable Park",
+    "Cable Park Curitiba",
+    "Wake Park Curitiba Paraná",
+    "Parque de Wakeboard perto de Curitiba",
+    "Melhor Cable Park do Brasil",
+    "Aulas de Wakeboard em Curitiba",
+    "Wakeboard para Iniciantes",
+    "Esportes Aquáticos",
+    "Esportes Radicais Curitiba - PR",
+    "Parque de Esportes Radicais Curitiba",
   ],
   generator: "Next.js",
   applicationName: "Zuno Cable Park",
   referrer: "origin-when-cross-origin",
-  authors: [{ name: "Diego Feder" }, { name: "Pedro Zucki", url: BASE_URL }],
+  authors: [{ name: "Diego Feder" }, { name: "Pedro Zucki"}],
   creator: "Pedro Zucki",
   publisher: "Zuno Cable Park",
 
@@ -65,8 +82,53 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Zuno Cable Park",
+    "url": BASE_URL,
+    "logo": `${BASE_URL}/images/logo.png`,
+    "image": `${BASE_URL}/images/hero.jpeg`,
+    "description": "O Zuno Cable Park oferece uma experiência incrível de wakeboard e wakeskate em Curitiba,  perfeito para iniciantes e profissionais. Reserve sua sessão hoje mesmo!",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": ADDRESS_STREET,
+      "addressLocality": ADDRESS_LOCALITY,
+      "addressRegion": "PR",
+      "postalCode": POSTAL_CODE,
+      "addressCountry": "BR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": PHONE_DASHED,
+      "contactType": "Customer Service",
+      "areaServed": "BR",
+      "availableLanguage": ["Portuguese"]
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "sameAs": [
+      INSTAGRAM_URL
+    ]
+  };
+
   return (
     <html lang="pt-BR">
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </Head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",

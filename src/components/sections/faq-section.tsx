@@ -1,6 +1,3 @@
-"use client";
-import { motion } from "framer-motion";
-
 import {
   Accordion,
   AccordionItem,
@@ -50,13 +47,7 @@ const faqData = [
 
 const FaqSection = () => {
   return (
-    <motion.section
-      className="g-section w-full z-0 py-8 flex flex-col items-center justify-start"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.1 }}
-    >
+    <section className="g-section w-full z-0 py-8 flex flex-col items-center justify-start">
       <h2 className="mb-4 flex w-full text-start text-5xl md:text-7xl text-green-500 font-black">
         FAQ
       </h2>
@@ -72,7 +63,7 @@ const FaqSection = () => {
           </AccordionItem>
         ))}
       </Accordion>
-    </motion.section>
+    </section>
   );
 };
 
