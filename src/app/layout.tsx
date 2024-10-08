@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: metadataBase,
   title: "Zuno Cable Park - Wakeboard e Wakeskate em Curitiba",
   description:
-    "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora! Perfeito para iniciantes e profissionais.",
+    "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora!",
   openGraph: {
     title: "Zuno Cable Park",
     description:
@@ -89,7 +89,7 @@ export default function RootLayout({
     "url": BASE_URL,
     "logo": `${BASE_URL}/images/logo.png`,
     "image": `${BASE_URL}/images/hero.jpeg`,
-    "description": "O Zuno Cable Park oferece uma experiência incrível de wakeboard e wakeskate em Curitiba,  perfeito para iniciantes e profissionais. Reserve sua sessão hoje mesmo!",
+    "description": "Experimente a emoção do wakeboard e wakeskate no Zuno Cable Park, localizado perto de Curitiba. Reserve sua sessão agora!",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": ADDRESS_STREET,
