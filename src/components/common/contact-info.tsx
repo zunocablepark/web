@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 import {
   ADDRESS_LABEL,
@@ -18,11 +19,23 @@ const ContactInfo = () => {
         <span className="text-slate-400 hidden sm:block">
           &nbsp;&nbsp;|&nbsp;&nbsp;
         </span>
-        <Link href={`tel:${PHONE}`} className=" text-white hover:underline">
+        <Link href={`tel:${PHONE}`} className="text-white hover:underline">
           {PHONE_LABEL}
         </Link>
       </div>
-      <p className="">{ADDRESS_LABEL}</p>
+      <p className="pb-1">{ADDRESS_LABEL}</p>
+      <p className="text-md font-bold">
+        <FaMapMarkerAlt size={16} className="inline me-2" />
+        Estamos alocados no mesmo espaço que o{" "}
+        <Link
+          className="hover:underline hover:text-green-500 "
+          href="https://www.instagram.com/crozettaparkcross/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Crozetta Park Cross
+        </Link>
+      </p>
     </div>
   );
 };
