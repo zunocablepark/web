@@ -28,7 +28,7 @@ const ContactInfo = () => {
         <FaMapMarkerAlt size={16} className="inline me-2" />
         Estamos alocados no mesmo espaço que o{" "}
         <Link
-          className="hover:underline hover:text-green-500 "
+          className="underline hover:scale-125 hover:text-green-500 "
           href="https://www.instagram.com/crozettaparkcross/"
           target="_blank"
           rel="noopener noreferrer"
