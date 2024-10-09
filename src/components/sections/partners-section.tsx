@@ -1,7 +1,9 @@
 import { PartnerLogo } from "../common";
+import { Button } from "../ui";
 
 const PartnersSection: React.FC = () => (
   <section className="top-16 sm:top-24 left-0 flex flex-col items-center justify-center w-full z-0 bg-white py-8 border-b-4 border-green-600">
+    <h2 className="text-black font-extrabold text-3xl underline">PARCEIROS:</h2>
     <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 w-full max-w-6xl mx-auto justify-items-center">
       <PartnerLogo
         src="/images/partners/nodari.png"
@@ -32,6 +34,7 @@ const PartnersSection: React.FC = () => (
         height={120}
       />
     </div>
+    <Button className="text-black text-xl font-extrabold bg-green-600 hover:bg-green-500 p">VER MAIS</Button>
   </section>
 );
 
