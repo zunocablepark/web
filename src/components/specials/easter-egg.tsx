@@ -31,6 +31,7 @@ const EasterEgg = () => {
       {/* Zona 1 - Canto Inferior Esquerdo */}
       <div
         onClick={() => handleClick("zone1")}
+        className="hidden"
         style={{
           position: "absolute",
           bottom: "11%",
@@ -46,6 +47,7 @@ const EasterEgg = () => {
       {/* Zona 2 - Canto Inferior Direito */}
       <div
         onClick={() => handleClick("zone2")}
+        className="hidden"
         style={{
           position: "absolute",
           bottom: "11%",
