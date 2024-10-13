@@ -19,7 +19,7 @@ const images = [
   { src: "/images/gallery/01-bia-control.jpg", alt: "Bia e Pedro Zucki, os experientes proprietários, gerenciando o Zuno Cable Park com paixão" },
 ];
 
-const GallerySection = () => {
+const GallerySection: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {

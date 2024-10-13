@@ -42,7 +42,7 @@ const faqData = [
   },
 ];
 
-const FaqSection = () => {
+const FaqSection: React.FC = () => {
   return (
     <section className="g-section w-full z-0 py-8 flex flex-col items-center justify-start">
       <h2 className="mb-4 flex w-full text-start text-5xl md:text-7xl text-green-500 font-black">

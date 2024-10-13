@@ -9,7 +9,7 @@ import {
   PHONE_LABEL,
 } from "@/lib/constants/";
 
-const ContactInfo = () => {
+const ContactInfo: React.FC = () => {
   return (
     <div className="font-black text-lg text-white leading-relaxed text-center py-3 sm:py-4 px-4">
       <div className="flex flex-col justify-center sm:flex-row w-full pb-2">

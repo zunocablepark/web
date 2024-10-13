@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const MapSection = () => {
+const MapSection: React.FC = () => {
   const [isMapInteractive, setIsMapInteractive] = useState(false);
   const mapSectionRef = useRef<HTMLDivElement>(null);
 
