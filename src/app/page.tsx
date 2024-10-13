@@ -7,7 +7,6 @@ import {
   MapSection,
   PartnersSection,
   VideoSection,
-  EasterEgg,
 } from "@/components";
 
 export default function HomePage() {
@@ -21,8 +20,6 @@ export default function HomePage() {
       <ContactSection />
       <MapSection />
       <PartnersSection />
-
-      <EasterEgg />
     </>
   );
 }
