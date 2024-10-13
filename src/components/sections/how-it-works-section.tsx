@@ -1,6 +1,6 @@
 import { AdditionalInfo, HeroHeadings, PricesTable } from "@/components";
 
-const HowItWorksSection = () => {
+const HowItWorksSection: React.FC = () => {
   return (
     <section
     className="max-w-page mx-auto w-full px-4 py-8 md:py-12 flex flex-col items-start justify-center"

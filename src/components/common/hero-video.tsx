@@ -1,6 +1,6 @@
 import { AspectRatio } from "../ui";
 
-const HeroVideo = () => {
+const HeroVideo: React.FC = () => {
   return (
     <AspectRatio
       ratio={16 / 9}

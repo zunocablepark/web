@@ -5,7 +5,7 @@ interface GalleryItemProps {
   alt: string;
 }
 
-const GalleryItem = ({ src, alt }: GalleryItemProps) => {
+const GalleryItem: React.FC<GalleryItemProps> = ({ src, alt }) => {
   return (
     <div className="relative w-full h-full min-w-[200px] min-h-[200px] rounded-lg">
       <Image

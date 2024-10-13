@@ -1,10 +1,10 @@
 import { ContactInfo} from "../common";
 
-const ContactSection = () => {
+const ContactSection: React.FC = () => {
   return (
-    <>
+    <section>
       <ContactInfo />
-    </>
+    </section>
   );
 };
 

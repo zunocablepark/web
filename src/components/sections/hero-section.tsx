@@ -1,6 +1,6 @@
 import { HeroImage } from "../common";
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <>
       <HeroImage />
