@@ -2,10 +2,7 @@ import { AspectRatio } from "../ui";
 
 const HeroVideo: React.FC = () => {
   return (
-    <AspectRatio
-      ratio={16 / 9}
-      className="max-w-page mx-auto pl-0"
-    >
+    <AspectRatio ratio={16 / 9} className="max-w-page mx-auto pl-0">
       <video
         className="w-full h-full object-cover rounded-md xl:rounded-3xl "
         autoPlay
