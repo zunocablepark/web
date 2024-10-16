@@ -5,9 +5,9 @@ import { sessionLink } from '@/lib/whatsapp'
 const HeroHeadings = () => {
   return (
     <>
-     <h2 className="pb-12 md:pb-16 mx-auto text-center text-3xl md:text-5xl font-extrabold uppercase">
+     <h1 className="pb-12 md:pb-16 mx-auto text-center text-3xl md:text-5xl font-extrabold uppercase">
         O destino perfeito para os amantes de Wakeboard!
-      </h2>
+      </h1>
       <p className="pb-8 text-start text-5xl md:text-7xl text-green-500 font-black tracking-tight">
         TERÇA A SEXTA:
         <br />
