@@ -4,14 +4,14 @@ const HeroImage = () => {
   return (
     <div className="relative max-w-page w-full">
       <div className="absolute pl-0 md:pl-6 z-20">
-        <h1 className="flex flex-start pl-6 md:pl-0 mb-4 sm:mb-8 pt-8 sm:pt-12 md:pt-16 text-left text-6xl sm:text-7xl md:text-8xl font-black uppercase">
-          Zuno
+        <h2 className="flex flex-start pl-6 md:pl-0 mb-4 sm:mb-8 pt-8 sm:pt-12 md:pt-16 text-left text-6xl sm:text-7xl md:text-8xl font-black uppercase">
+          Zuno&nbsp;
           <br />
-          Cable
+          Cable&nbsp;
           <br />
           Park
           <br />
-        </h1>
+        </h2>
       </div>
       <div className="relative w-full h-full min-h-[400px] sm:min-h-[600px] md:min-h-[720px]">
         <Image
